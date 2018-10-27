@@ -1,7 +1,8 @@
 language: python3.6
 python3.6:
-       -3.6.5
+       - 3.6.5
 install:
-       -pip install -r requirements.txt
+       - easy_install distribute
+       - pip install -r requirements.txt
 script:
-       -python3.6 manage.py test
+       - python3.6 manage.py test
